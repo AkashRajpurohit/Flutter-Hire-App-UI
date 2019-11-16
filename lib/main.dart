@@ -183,9 +183,21 @@ class _HomePageState extends State<HomePage> {
               _buildCard(name: "Amy Santiago", status: "Away", cardIndex: 5, image: "https://s3.amazonaws.com/uifaces/faces/twitter/abotap/128.jpg"),
               _buildCard(name: "Gina Leneti", status: "Available", cardIndex: 6, image: "https://s3.amazonaws.com/uifaces/faces/twitter/dahparra/128.jpg"),
               _buildCard(name: "Hitchcock", status: "Always Available", cardIndex: 7, image: "https://s3.amazonaws.com/uifaces/faces/twitter/blakehawksworth/128.jpg"),
-              _buildCard(name: "Terry", status: "Away", cardIndex: 8, image: "https://s3.amazonaws.com/uifaces/faces/twitter/victordeanda/128.jpg")
+              _buildCard(name: "Terry", status: "Away", cardIndex: 8, image: "https://s3.amazonaws.com/uifaces/faces/twitter/victordeanda/128.jpg"),
             ],
-          )
+          ),
+          SizedBox(height: 25.0),
+          // PS: If you are removing the credits section then kindly give a star on github at https://github.com/AkashRajpurohit/Flutter-Hire-App-UI
+          Center(
+            child: Text(
+              "@AkashRajpurohit",
+              style: TextStyle(
+                fontSize: 18.0,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+          ),
+          SizedBox(height: 25.0)
         ],
       ),
     );
@@ -234,25 +246,25 @@ class _HomePageState extends State<HomePage> {
               ),
               SizedBox(height: 11.0),
               Container(
-                  padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
-                  width: 175.0,
-                  decoration: BoxDecoration(
-                    color: status == "Away" ? Colors.grey[400] : Colors.green[600],
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(10),
-                      bottomRight: Radius.circular(10)
-                    )
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Request",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16.0
-                      ),
+                padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
+                width: 175.0,
+                decoration: BoxDecoration(
+                  color: status == "Away" ? Colors.grey[400] : Colors.green[600],
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10)
+                  )
+                ),
+                child: Center(
+                  child: Text(
+                    "Request",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16.0
                     ),
                   ),
                 ),
+              ),
             ],
           )
         ],
