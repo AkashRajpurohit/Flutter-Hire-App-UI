@@ -7,6 +7,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
       home: HomePage(),
     );
   }
@@ -133,6 +136,37 @@ class _HomePageState extends State<HomePage> {
                 ),
               )
             ],
+          ),
+          SizedBox(height: 40.0),
+          Container(
+            padding: EdgeInsets.only(left: 25.0, right: 25.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                InkWell(
+                  onTap: () {},
+                  child: Text(
+                    "MY COACHES",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12.0
+                    )
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Text(
+                    "VIEW PAST SESSIONS",
+                    style: TextStyle(
+                      color: Colors.green,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12.0
+                    )
+                  ),
+                ),
+              ],
+            ),
           )
         ],
       ),
