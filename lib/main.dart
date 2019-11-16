@@ -57,6 +57,80 @@ class _HomePageState extends State<HomePage> {
                     fontSize: 20.0
                   ),
                 ),
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(25.0, 90.0, 25.0, 0.0),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20.0),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 1.0,
+                      color: Colors.grey.withOpacity(0.5)
+                    )
+                  ]
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    Stack(
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.fromLTRB(20.0, 25.0, 5.0, 5.0),
+                          child: Text(
+                            "YOU HAVE",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14.0
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(20.0, 40.0, 5.0, 15.0),
+                          child: Text(
+                            "206",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 40.0
+                            ),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.fromLTRB(100.0, 58.0, 5.0, 5.0),
+                          child: Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                            size: 25.0,
+                          ),
+                        )
+                      ],
+                    ),
+                    Container(
+                      height: 50.0,
+                      width: 125.0,
+                      decoration: BoxDecoration(
+                        color: Colors.greenAccent[100].withOpacity(0.4),
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
+                      child: Center(
+                        child: InkWell(
+                          onTap: () {},
+                          child: Text(
+                            "Buy more",
+                            style: TextStyle(
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.green
+                            ),
+                          ),
+                        )
+                      ),
+                    ),
+                  ],
+                ),
               )
             ],
           )
