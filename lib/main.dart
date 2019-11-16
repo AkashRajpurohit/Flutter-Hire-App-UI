@@ -45,6 +45,7 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+      backgroundColor: Colors.grey[200],
       body: ListView(
         shrinkWrap: true,
         children: <Widget>[
