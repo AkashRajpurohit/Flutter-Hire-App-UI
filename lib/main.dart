@@ -226,6 +226,20 @@ class _HomePageState extends State<HomePage> {
                   )
                 ),
               ),
+              Container(
+                margin: EdgeInsets.only(left: 42.0),
+                height: 20.0,
+                width: 20.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30.0),
+                  color: status == "Away" ? Colors.amber : Colors.green,
+                  border: Border.all(
+                    color: Colors.white,
+                    style: BorderStyle.solid,
+                    width: 2.0
+                  )
+                ),
+              )
             ],
           ),
           SizedBox(height: 8.0),
