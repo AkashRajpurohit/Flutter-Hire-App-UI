@@ -167,6 +167,93 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
+          ),
+          SizedBox(height: 10.0),
+          GridView.count(
+            crossAxisCount: 2,
+            crossAxisSpacing: 2.0,
+            mainAxisSpacing: 4.0,
+            shrinkWrap: true,
+            primary: false,
+            children: <Widget>[
+              _buildCard(name: "Jake Peralta", status: "Available", cardIndex: 1, image: "https://s3.amazonaws.com/uifaces/faces/twitter/mgonto/128.jpg"),
+              _buildCard(name: "Raymond Holt", status: "Away", cardIndex: 2, image: "https://s3.amazonaws.com/uifaces/faces/twitter/id835559/128.jpg"),
+              _buildCard(name: "Rosa Diaz", status: "Away", cardIndex: 3, image: "https://s3.amazonaws.com/uifaces/faces/twitter/imsoper/128.jpg"),
+              _buildCard(name: "Charles", status: "Available", cardIndex: 4, image: "https://s3.amazonaws.com/uifaces/faces/twitter/olaolusoga/128.jpg"),
+              _buildCard(name: "Amy Santiago", status: "Away", cardIndex: 5, image: "https://s3.amazonaws.com/uifaces/faces/twitter/abotap/128.jpg"),
+              _buildCard(name: "Gina Leneti", status: "Available", cardIndex: 6, image: "https://s3.amazonaws.com/uifaces/faces/twitter/dahparra/128.jpg"),
+              _buildCard(name: "Hitchcock", status: "Always Available", cardIndex: 7, image: "https://s3.amazonaws.com/uifaces/faces/twitter/blakehawksworth/128.jpg"),
+              _buildCard(name: "Terry", status: "Away", cardIndex: 8, image: "https://s3.amazonaws.com/uifaces/faces/twitter/victordeanda/128.jpg")
+            ],
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCard({ String name, String status, String image, int cardIndex }) {
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      elevation: 5.0,
+      margin: cardIndex.isEven ? EdgeInsets.fromLTRB(10.0, 0.0, 25.0, 10.0) : EdgeInsets.fromLTRB(25.0, 0.0, 5.0, 10.0),
+      child: Column(
+        children: <Widget>[
+          SizedBox(height: 12.0),
+          Column(
+            children: <Widget>[
+              Container(
+                height: 60.0,
+                width: 60.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30.0),
+                  color: Colors.green,
+                  image: DecorationImage(
+                    image: NetworkImage(image)
+                  )
+                ),
+              ),
+              SizedBox(height: 8.0),
+              Text(
+                name,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20.0,
+                  color: Colors.black
+                )
+              ),
+              SizedBox(height: 8.0),
+              Text(
+                status,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16.0,
+                  color: Colors.grey
+                )
+              ),
+              SizedBox(height: 11.0),
+              Container(
+                  padding: EdgeInsets.only(top: 15.0, bottom: 15.0),
+                  width: 175.0,
+                  decoration: BoxDecoration(
+                    color: status == "Away" ? Colors.grey[400] : Colors.green[600],
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10)
+                    )
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Request",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0
+                      ),
+                    ),
+                  ),
+                ),
+            ],
           )
         ],
       ),
