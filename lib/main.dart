@@ -42,6 +42,26 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+      body: ListView(
+        shrinkWrap: true,
+        children: <Widget>[
+          Stack(
+            children: <Widget>[
+              Container(
+                alignment: Alignment(0.0, -0.40),
+                color: Colors.white,
+                height: 100.0,
+                child: Text(
+                  "Get coaching",
+                  style: TextStyle(
+                    fontSize: 20.0
+                  ),
+                ),
+              )
+            ],
+          )
+        ],
+      ),
     );
   }
 }
