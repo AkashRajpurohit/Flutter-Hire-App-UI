@@ -57,7 +57,8 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   "Get coaching",
                   style: TextStyle(
-                    fontSize: 20.0
+                    fontSize: 20.0,
+                    fontFamily: 'Montserrat'
                   ),
                 ),
               ),
@@ -86,7 +87,8 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(
                               color: Colors.grey,
                               fontWeight: FontWeight.bold,
-                              fontSize: 14.0
+                              fontSize: 14.0,
+                              fontFamily: 'Quicksand'
                             ),
                           ),
                         ),
@@ -97,7 +99,8 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(
                               color: Colors.black,
                               fontWeight: FontWeight.bold,
-                              fontSize: 40.0
+                              fontSize: 40.0,
+                              fontFamily: 'Quicksand'
                             ),
                           ),
                         ),
@@ -126,7 +129,8 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.bold,
-                              color: Colors.green
+                              color: Colors.green,
+                              fontFamily: 'Quicksand'
                             ),
                           ),
                         )
@@ -150,7 +154,8 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.bold,
-                      fontSize: 12.0
+                      fontSize: 12.0,
+                      fontFamily: 'Quicksand'
                     )
                   ),
                 ),
@@ -161,7 +166,8 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(
                       color: Colors.green,
                       fontWeight: FontWeight.bold,
-                      fontSize: 12.0
+                      fontSize: 12.0,
+                      fontFamily: 'Quicksand',
                     )
                   ),
                 ),
@@ -193,7 +199,8 @@ class _HomePageState extends State<HomePage> {
               "@AkashRajpurohit",
               style: TextStyle(
                 fontSize: 18.0,
-                fontWeight: FontWeight.bold
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Quicksand'
               ),
             ),
           ),
@@ -248,7 +255,8 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20.0,
-              color: Colors.black
+              color: Colors.black,
+              fontFamily: 'Quicksand'
             )
           ),
           SizedBox(height: 8.0),
@@ -257,7 +265,8 @@ class _HomePageState extends State<HomePage> {
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 16.0,
-              color: Colors.grey
+              color: Colors.grey,
+              fontFamily: 'Quicksand'
             )
           ),
           SizedBox(height: 11.0),
@@ -276,7 +285,8 @@ class _HomePageState extends State<HomePage> {
                   "Request",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 16.0
+                    fontSize: 16.0,
+                    fontFamily: 'Quicksand'
                   ),
                 ),
               ),
