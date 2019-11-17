@@ -2,7 +2,7 @@
 
 A Hire App UI Developed using Flutter.
 
-Design Inspiration from a design made by [Michał Roszyk](https://dribbble.com/shots/4486758-Relationship-Coaching-App/attachments/1017305)
+Inspiration from a design made by [Michał Roszyk](https://dribbble.com/shots/4486758-Relationship-Coaching-App/attachments/1017305)
 
 # App Screenshots
 
