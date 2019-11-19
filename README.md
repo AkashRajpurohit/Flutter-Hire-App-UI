@@ -16,7 +16,7 @@ App UI
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/RajpurohitAkash)
 
 # Download
-You can [download](https://github.com/AkashRajpurohit/Flutter-Hire-App-UI/releases/download/v1.0/app-arm64-v8a-release.apk) the application for android and try the it yourself.
+You can [download](https://github.com/AkashRajpurohit/Flutter-Hire-App-UI/releases/download/v1.0/app-arm64-v8a-release.apk) the application for android and try it yourself.
 
 # Bugs or Requests
 
