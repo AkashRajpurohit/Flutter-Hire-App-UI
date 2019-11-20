@@ -20,7 +20,7 @@ You can [download](https://github.com/AkashRajpurohit/Flutter-Hire-App-UI/releas
 
 # Bugs or Requests
 
-If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/Flutter-Hire-App-UI/issues/new). Pull request are also welcome.
+If you encounter any problems feel free to open an [issue](https://github.com/AkashRajpurohit/Flutter-Hire-App-UI/issues/new). Pull requests are also welcome.
 
 ## Visit My Portfolio
 [Akash Rajpurohit](https://akashrajpurohit.cf)
